@@ -1,84 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
+html,
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(to right, #1f1c18, #8e0e00);
 }
-
-form {
-    padding: 20px;
-    border: 2px solid gray;
-    border-radius: 10px;
+::selection {
+  background: #4158d0;
+  color: #fff;
 }
-form > h1 {
-    border-bottom: 2px solid gray;
-    padding-bottom: 10px;
+.wrapper {
+  width: 480px;
+  height: 600px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
 }
-.form-body {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
+.wrapper .title {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(to right, #ff5f6d, #8f5a11);
 }
-.form-body > div {
-    margin-top: 10px;
+.title2{
+    color: #1f1c18;
+    font-weight: 600;
 }
-.form-body div {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.wrapper form {
+  padding: 10px 30px 50px 30px;
 }
-.form-body div label {
-    padding-left: 10px;
-    color: gray;
-    font-weight: bold;
+.wrapper form .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+  position: relative;
 }
-form > div > div:nth-child(4) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0;
+.wrapper form .field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  transition: all 0.3s ease;
 }
-
-form > div > div:nth-child(5) button {
-    width: 30%;
-    background-color: green;
-    padding: 10px 20px;
-    border: 0;
-    outline: 0;
-    border-radius: 20px;
-    cursor: pointer;
-    color: white;
-    box-shadow: 5px 5px 10px #000;
-}
-form > div > div:nth-child(6) button:hover {
-    background-color: rgb(4, 146, 4);
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"] {
+.check{
+    height: 100%;
+    width: 500%;
     outline: none;
-    padding: 5px 20px;
-    border-radius: 20px;
-    border: 1px solid gray;
-    font-size: 20px;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    transition: all 0.3s ease;   
 }
-::placeholder {
-    font-size: 20px;
-    color: gray;
+ button {
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(to right, #ff5f6d, #8f5a11);
+  transition: all 0.3s ease;
+}
+button:hover{
+    opacity: 0.9;
 }
 
-.error {
-    font-size: 12px;
-    color: orangered;
-    display: block;
-    padding-top: 5px;
+
+#pasEr{
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    color: red;
 }
+#checkP, #mailP, #adP{
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    color: red;
+}
+.field2{
+    margin-top: 30px;
+    height: 100%;
+}
+
